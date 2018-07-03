@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
+    <title>我参加的-活动详情</title>
+    <!-- CSS start -->
+    <link href="../icofont/style.css" rel="stylesheet"/>
+    <link href="../css/style.min.css" rel="stylesheet"/>
+    <!-- CSS over -->
+    <script type="text/javascript" src="../js/system.js"></script>
+</head>
+
+
+<body>
+    <!-- container start -->
+    <div class="mui-off-canvas-wrap mui-draggable">
+        <div class="mui-inner-wrap">
+            <!-- header start -->
+            <header class="mui-bar mui-bar-nav mui-bar-border hairline status-bar">
+                <a class="mui-icon mui-pull-left icofont-back" href="6-my-party.html"><i class="icon-back"></i></a>
+                <h1 class="mui-title">我的活动</h1>
+            </header>
+            <!-- header over -->
+            <!-- main start -->
+            <div class="mui-content mui-scroll-wrapper" style="background-color: #f7f7f7;">
+                <div class="mui-scroll">
+                    <!-- content start -->
+                    <div class="content-party">
+                        <!-- slider start -->
+                        <div class="swiper-container slider-party" id="slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#"><img src="https://dummyimage.com/375x190"></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#"><img src="https://dummyimage.com/375x190"></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#"><img src="https://dummyimage.com/375x190"></a>
+                                </div>
+                            </div>
+                            <div class="cover">
+                                <h4 class="title">安工大冶金系聚会马拉松</h4>
+                                <div class="pagination">
+                                    <i class="icon-image"></i>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider over -->
+                        <!-- enroll start -->
+                        <div class="party-enroll">
+                            <p>有10人报名参加：</p>
+                            <div class="row">
+                                <div class="avatar">
+                                    <img src="https://dummyimage.com/34x34">
+                                    <img src="https://dummyimage.com/34x34">
+                                    <img src="https://dummyimage.com/34x34">
+                                    <img src="https://dummyimage.com/34x34">
+                                    <img src="https://dummyimage.com/34x34">
+                                    <img src="https://dummyimage.com/34x34">
+                                </div>
+                                <a href="6-my-party-list.html" class="link">
+                                    <span>查看活动报名人员</span>
+                                    <i class="icon-go"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- enroll over -->
+                        <div class="spacing"></div>
+                        <!-- info start -->
+                        <div class="party-info">
+                            <div class="row-author">
+                                <div class="author">
+                                    <img src="https://dummyimage.com/34x34">
+                                    <p>Ever Never</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p style="width:100%;">聚会时间：6月26日~7月26日</p>
+                            </div>
+                            <div class="row">
+                                <p style="width:100%;">聚会地点：湖南路大华广场</p>
+                            </div>
+                            <div class="row">
+                                <p>支付方式：<span class="color-1">线上支付</span></p>
+                                <p>收取费用：<span class="color-1">100元</span></p>
+                            </div>
+                            <blockquote>
+                                <p>将公益慈善理念与户外运动相结合的大型公益体育活动； 推广健康、自信的生活品质的同时，吸引更多大众参与到爱心公益活动中；将公益慈善理念与户外运动相结合的大型公益体育活动；推广健康、自信的生活品质的同时，吸引更多大众参与到爱心公益活动中；</p>
+                            </blockquote>
+                        </div>
+                        <!-- info over -->
+                    </div>
+                    <!-- content over -->
+                </div>
+            </div>
+            <!-- main over -->
+        </div>
+    </div>
+    <!-- container over -->
+
+    <!-- global JS start -->
+    <!-- <script src="../js/jquery-1.9.1.min.js"></script> -->
+    <script src="../js/mui/mui.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/scripts.js"></script>
+    <!-- global JS over -->
+
+    <!-- page JS start -->
+    <script type="text/javascript">
+        mui.init();
+        mui('.mui-scroll-wrapper').scroll();
+        // slideshow
+        var mySwiper = new Swiper('#slider', {
+            loop: true,
+            autoplay: {
+                delay: 3000
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction'
+            }
+        });
+    </script>
+    <!-- page JS start -->
+
+</body>
+
+</html>

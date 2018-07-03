@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
+    <title>用户详情</title>
+    <!-- CSS start -->
+    <link href="../icofont/style.css" rel="stylesheet"/>
+    <link href="../css/style.min.css" rel="stylesheet"/>
+    <!-- CSS over -->
+    <script type="text/javascript" src="../js/system.js"></script>
+</head>
+
+
+<body onload="loaded()">
+    <!-- container start -->
+    <div class="mui-off-canvas-wrap mui-draggable">
+        <div class="mui-inner-wrap">
+            <!-- header start -->
+            <header class="mui-bar mui-bar-nav status-bar status-bar-transparent">
+                <a class="mui-icon mui-pull-left icofont-back" href="2-contacts.html"><i class="icon-back"></i></a>
+                <h1 class="mui-title">Chanel</h1>
+            </header>
+            <!-- header over -->
+            <!-- button start -->
+            <footer class="footer-button-group">
+                <button type="button" class="mui-btn mui-btn-warning mui-btn-block mui-btn-round button-warning-outline">发消息</button>
+                <button type="button" class="mui-btn mui-btn-warning mui-btn-block mui-btn-round">添加好友</button>
+                <button type="button" class="mui-btn mui-btn-warning mui-btn-block mui-btn-round button-warning-outline">关注</button>
+            </footer>
+            <!-- button over -->
+            <!-- main start -->
+            <div class="mui-content mui-scroll-wrapper main-scroll">
+                <div class="mui-scroll scroller">
+                    <!-- panel start -->
+                    <div class="panel-contacts">
+                        <div class="background" style="background-image:url('../img/avatar-default.jpg')"></div>
+                        <div class="info">
+                            <div class="avatar">
+                                <img src="../img/avatar-default.jpg">
+                            </div>
+                            <p class="name">Chanel</p>
+                            <!-- 女性将blue改为pink -->
+                            <p class="label blue">25</p>
+                            <p class="text">“这里是个性签名”</p>
+                            <div class="stat">
+                                <div class="item">
+                                    <p>100</p>
+                                    <p>关注</p>
+                                </div>
+                                <div class="item">
+                                    <p>100</p>
+                                    <p>粉丝</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- panel over -->
+                    <!-- tabbar start -->
+                    <div class="tab-bar-4">
+                        <a class="mui-control-item" href="2-contacts-content.html">相册</a>
+                        <a class="mui-control-item mui-active" href="2-contacts-content-2.html">咖动态</a>
+                        <a class="mui-control-item" href="2-contacts-content-3.html">资料</a>
+                    </div>
+                    <!-- tabbar over -->
+                    <!-- list start -->
+                    <ul class="list-news">
+                        <!-- 与首页列表相同 -->
+                        <!-- item start -->
+                        <li class="item">
+                            <div class="item-header">
+                                <a class="avatar"><img src="https://dummyimage.com/34x34"></a>
+                                <div class="item-header-info">
+                                    <p class="name">Ever Never</p>
+                                    <p class="label">2018-06-04 10:30:51</p>
+                                </div>
+                                <div class="item-header-address">
+                                    <i class="icon-address-3"></i>
+                                    <span>马鞍山职业技术学院</span>
+                                </div>
+                            </div>
+                            <a class="item-body mui-table-view-cell" href="1-news-content.html">
+                                <div class="text">
+                                    <p>马鞍山市志业软件科技有限公司为您提供网站建设推广、网站运营维护、软件定制开发、域名注册、虚拟主机、企业VI设计、APP应用开发、移动网站设计开发等多种信息产品和服务...</p>
+                                </div>
+                                <!-- 3张及3张以上图片样式 -->
+                                <!-- .picture-item为1组, 3的倍数组添加 class="fix" -->
+                                <div class="picture">
+                                    <div class="picture-item" style="background-image:url('https://dummyimage.com/100x200')"></div>
+                                    <div class="picture-item" style="background-image:url('https://dummyimage.com/200x100')"></div>
+                                    <div class="picture-item fix" style="background-image:url('https://dummyimage.com/50x300')"></div>
+                                    <div class="picture-item" style="background-image:url('https://dummyimage.com/100x200')"></div>
+                                    <div class="picture-item" style="background-image:url('https://dummyimage.com/200x100')"></div>
+                                    <div class="picture-item fix" style="background-image:url('https://dummyimage.com/50x300')"></div>
+                                    <div class="picture-item" style="background-image:url('https://dummyimage.com/100x200')"></div>
+                                    <div class="picture-item" style="background-image:url('https://dummyimage.com/200x100')"></div>
+                                    <div class="picture-item fix" style="background-image:url('https://dummyimage.com/50x300')"></div>
+                                </div>
+                                <div class="supporter">
+                                    <div class="supporter-avatar">
+                                        <img src="https://dummyimage.com/34x34">
+                                        <img src="https://dummyimage.com/34x34">
+                                        <img src="https://dummyimage.com/34x34">
+                                        <img src="https://dummyimage.com/34x34">
+                                        <img src="https://dummyimage.com/34x34">
+                                        <img src="https://dummyimage.com/34x34">
+                                    </div>
+                                    <div class="supporter-statistics">
+                                        <p>等99人觉得很赞</p>
+                                        <i class="icon-go"></i>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="item-footer hairline">
+                                <!-- 已赞图标为icon-upvote-3, 并添加active -->
+                                <!-- 未赞图标为icon-upvote-2 -->
+                                <button class="mui-table-view-cell active">
+                                    <i class="icon-upvote-3"></i>
+                                </button>
+                                <a class="mui-table-view-cell upvote" href="1-news-content.html">
+                                    <i class="icon-information-5"></i>
+                                    <span>评论</span>
+                                </a>
+                            </div>
+                        </li>
+                        <!-- item over -->
+                    </ul>
+                    <!-- list over -->
+                </div>
+            </div>
+            <!-- main over -->
+            <div class="mui-off-canvas-backdrop"></div>
+        </div>
+    </div>
+    <!-- container over -->
+
+    <!-- 不会js，用jquery写了一些功能，整合时看能不能用js代替，删掉jquery和这行注释 -->
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <!-- 需要监听滚动条下拉距离来控制顶部样式, 本页面移除MUI, 加载使用iScroll -->
+    <!-- iScroll 区域滚动插件 -->
+    <script src="../js/iscroll/iscroll-probe.js"></script>
+
+    <!-- page JS start -->
+    <script type="text/javascript">
+    // iScroll
+    function isPassive() {
+        var supportsPassiveOption = false;
+        try {
+            addEventListener("test", null, Object.defineProperty({}, 'passive', {
+                get: function() {
+                    supportsPassiveOption = true;
+                }
+            }));
+        } catch (e) {}
+        return supportsPassiveOption;
+    }
+    document.addEventListener('touchmove', function(e) {
+        e.preventDefault();
+    }, isPassive() ? {
+        capture: false,
+        passive: false
+    } : false);
+
+    var mainScroll;
+
+    function loaded() {
+        mainScroll = new IScroll('.main-scroll', {
+            scrollbars: 'custom',
+            fadeScrollbars: true,
+            shrinkScrollbars: 'scale',
+            preventDefaultException: {
+                tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT|IMG)$/
+            },
+            probeType: 3,
+            click: true,
+            tap: true
+        });
+        // 滚动监听
+        mainScroll.on('scroll', function() {
+            // 顶部透明转换
+            if (this.y <= -196) {
+                $('.status-bar-transparent').addClass('status-bar-transparent-active');
+            } else {
+                $('.status-bar-transparent').removeClass('status-bar-transparent-active');
+            }
+        });
+        // 滚动结束监听
+        mainScroll.on('scrollEnd', function() {
+            // 上划加载
+            if (this.y <= (this.maxScrollY )) {
+                // 滚动结束事件
+                alert('开始加载数据');
+                // 加载完成后, 需要刷新容器尺寸
+                setTimeout(function() {
+                    mainScroll.refresh();
+                }, 100);
+            } else {
+            }
+        });
+    }
+    </script>
+    <!-- page JS start -->
+
+</body>
+
+</html>

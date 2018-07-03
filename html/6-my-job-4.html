@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
+    <title>我的兼职-待评价</title>
+    <!-- CSS start -->
+    <link href="../icofont/style.css" rel="stylesheet"/>
+    <link href="../css/style.min.css" rel="stylesheet"/>
+    <!-- CSS over -->
+    <script type="text/javascript" src="../js/system.js"></script>
+</head>
+
+
+<body>
+    <!-- container start -->
+    <div class="mui-off-canvas-wrap mui-draggable">
+        <div class="mui-inner-wrap">
+            <!-- header start -->
+            <header class="mui-bar mui-bar-nav mui-bar-border hairline status-bar">
+                <a class="mui-icon mui-pull-left icofont-back" href="index.html"><i class="icon-back"></i></a>
+                <h1 class="mui-title">我的兼职</h1>
+            </header>
+            <!-- header over -->
+            <!-- tabbar start -->
+            <header class="tab-bar">
+                <a class="mui-control-item" href="6-my-job.html">我发布的</a>
+                <a class="mui-control-item" href="6-my-job-2.html">我参加的</a>
+                <a class="mui-control-item" href="6-my-job-3.html">我收藏的</a>
+                <a class="mui-control-item mui-active" href="6-my-job-4.html">待评价</a>
+            </header>
+            <!-- tabbar over -->
+            <!-- main start -->
+            <div class="mui-content mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <!-- list start -->
+                    <ul class="list-job">
+                        <!-- item start -->
+                        <li class="item">
+                            <a class="item-body mui-table-view-cell" href="#">
+                                <button class="list-job-button" onclick="window.location.href=''">评&nbsp;&nbsp;价</button>
+
+                                <div class="avatar">
+                                    <h4 class="title">销售</h4>
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <h4 class="title">通讯兼职业务员</h4>
+                                        <h4 class="wages"><span>50元</span>/天</p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="text"><span>10人</span><span>日结</span><span>6月26日-7月26日</span></p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="text">马鞍山雨山区</p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="text color-1">天华教育</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- item over -->
+                        <!-- item start -->
+                        <li class="item">
+                            <a class="item-body mui-table-view-cell" href="#">
+                                <button class="list-job-button" onclick="window.location.href=''">评&nbsp;&nbsp;价</button>
+                                <div class="avatar">
+                                    <h4 class="title">销售</h4>
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <h4 class="title">通讯兼职业务员</h4>
+                                        <h4 class="wages"><span>50元</span>/天</p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="text"><span>10人</span><span>日结</span><span>6月26日-7月26日</span></p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="text">马鞍山雨山区</p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="text color-1">天华教育</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- item over -->
+                    </ul>
+                    <!-- list over -->
+                </div>
+            </div>
+            <!-- main over -->
+            <div class="mui-off-canvas-backdrop"></div>
+        </div>
+    </div>
+    <!-- container over -->
+
+    <!-- global JS start -->
+    <!-- <script src="../js/jquery-1.9.1.min.js"></script> -->
+    <script src="../js/mui/mui.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/scripts.js"></script>
+    <!-- global JS over -->
+
+    <!-- page JS start -->
+    <script type="text/javascript">
+        mui.init({
+            pullRefresh: {
+                container: '.mui-scroll-wrapper',
+                down: {
+                    style: 'circle',
+                    offset: '0px',
+                    auto: true,
+                    callback: pulldownRefresh
+                },
+                up: {
+                    contentrefresh: '正在加载...',
+                    callback: pullupRefresh
+                }
+            }
+        });
+        // 下拉刷新
+        function pulldownRefresh() {
+            setTimeout(function() {
+                mui('.mui-scroll-wrapper').pullRefresh().endPulldownToRefresh();
+            }, 1000);
+        }
+        // 上拉加载
+        function pullupRefresh() {
+            setTimeout(function() {
+                mui('.mui-scroll-wrapper').pullRefresh().endPullupToRefresh();
+            }, 1000);
+        }
+        // 链接嵌套修复
+        $('.list-job-button').on("tap", function(e) {
+            e.stopPropagation();
+        });
+    </script>
+    <!-- page JS start -->
+
+</body>
+
+</html>

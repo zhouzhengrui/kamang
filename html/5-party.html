@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
+    <title>活动列表</title>
+    <!-- CSS start -->
+    <link href="../icofont/style.css" rel="stylesheet"/>
+    <link href="../css/style.min.css" rel="stylesheet"/>
+    <!-- CSS over -->
+    <script type="text/javascript" src="../js/system.js"></script>
+</head>
+
+
+<body>
+    <!-- container start -->
+    <div class="mui-off-canvas-wrap mui-draggable">
+        <div class="mui-inner-wrap">
+            <!-- aside start -->
+            <aside class="mui-off-canvas-left" id="aside">
+                <div class="sidebar">
+                    <!-- user start -->
+                    <div class="sidebar-user">
+                        <a class="avatar" href="6-my-info.html">
+                            <img src="../img/avatar-default.jpg">
+                            <!-- 已认证 -->
+                            <img class="authentication" src="../img/job-select.png">
+                            <!-- 未认证 -->
+                            <!-- <img class="authentication" src="../img/cancel.png"> -->
+                        </a>
+                        <h4 class="name">Ever Never</h4>
+                        <!-- 未认证显示 -->
+                        <p class="authentication">账号尚未认证, 无法使用以下功能</p>
+                    </div>
+                    <!-- user over -->
+                    <!-- list start -->
+                    <ul class="mui-table-view">
+                        <li class="mui-table-view-cell">
+                            <a href="6-my-news.html">
+                                <i class="icon-eye"></i><span>我的动态</span>
+                            </a>
+                        </li>
+                        <li class="mui-table-view-cell">
+                            <a href="6-my-party.html">
+                                <i class="icon-party"></i><span>我的活动</span>
+                            </a>
+                        </li>
+                        <li class="mui-table-view-cell">
+                            <a href="6-my-job.html">
+                                <i class="icon-part-time-job"></i><span>我的兼职</span>
+                            </a>
+                        </li>
+                        <li class="line hairline"></li>
+                        <li class="mui-table-view-cell">
+                            <a href="6-my-wallet.html">
+                                <i class="icon-wallet"></i><span>我的钱包</span>
+                            </a>
+                        </li>
+                        <li class="mui-table-view-cell">
+                            <a href="6-my-information.html">
+                                <i class="icon-information-2"></i><span>我的消息</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="mui-table-view seting">
+                        <li class="mui-table-view-cell">
+                            <a href="6-my-setting.html">
+                                <i class="icon-gear"></i><span>设置</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- list over -->
+                </div>
+            </aside>
+            <!-- aside over -->
+
+            <!-- header start -->
+            <header class="mui-bar mui-bar-nav mui-bar-border hairline status-bar">
+                <a href="#aside" class="mui-pull-left header-avatar"><img src="../img/avatar-default.jpg"></a>
+                <a class="mui-pull-right text" href="5-party-add.html">发布活动</a>
+                <h1 class="mui-title">活动列表</h1>
+            </header>
+            <!-- header over -->
+            <!-- sort start -->
+            <div class="sort-bar">
+                <div class="item">
+                    <select>
+                        <option style="display:none">区域</option>
+                        <option>花山</option>
+                        <option>雨山</option>
+                    </select>
+                </div>
+                <div class="item">
+                    <select>
+                        <option style="display:none">类型</option>
+                        <option>聚会</option>
+                        <option>聚餐</option>
+                    </select>
+                </div>
+                <div class="item">
+                    <select>
+                        <option style="display:none">交易方式</option>
+                        <option>免费</option>
+                        <option>AA制</option>
+                    </select>
+                </div>
+            </div>
+            <!-- sort over -->
+            <!-- footer start -->
+            <footer class="mui-bar mui-bar-tab">
+                <a class="mui-tab-item  " href="index.html">
+                    <i class="mui-icon icon-home"></i>
+                    <span class="mui-tab-label">首页</span>
+                </a>
+                <a class="mui-tab-item  " href="2-contacts.html">
+                    <i class="mui-icon icon-contacts"></i>
+                    <span class="mui-tab-label">联系人</span>
+                </a>
+                <a class="mui-tab-item  " href="3-information.html">
+                    <i class="mui-icon icon-information"></i>
+                    <span class="mui-tab-label">消息</span>
+                </a>
+                <a class="mui-tab-item  " href="4-job.html">
+                    <i class="mui-icon icon-part-time-job"></i>
+                    <span class="mui-tab-label">兼职</span>
+                </a>
+                <a class="mui-tab-item  mui-active" href="5-party.html">
+                    <i class="mui-icon icon-party"></i>
+                    <span class="mui-tab-label">爬梯</span>
+                </a>
+            </footer>
+            <!-- footer start -->
+
+            <!-- main start -->
+            <div class="mui-content mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <!-- list start -->
+                    <ul class="list-party">
+                        <!-- item start -->
+                        <li class="item">
+                            <a class="item-body mui-table-view-cell" href="5-party-content.html">
+                                <div class="cover" style="background-image:url('https://dummyimage.com/345x190')">
+                                    <h4 class="title">安工大冶金系聚会马拉松</h4>
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="author">
+                                            <img src="https://dummyimage.com/34x34">
+                                            <p>Ever Never</p>
+                                        </div>
+                                        <p class="gray">已有20人参加</p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="add"><i class="icon-address-3"></i>湖南路大华广场</p>
+                                        <p class="gray">于7月21日开始</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- item over -->
+                        <!-- item start -->
+                        <li class="item">
+                            <a class="item-body mui-table-view-cell" href="5-party-content.html">
+                                <div class="cover" style="background-image:url('https://dummyimage.com/345x190')">
+                                    <h4 class="title">安工大冶金系聚会马拉松</h4>
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="author">
+                                            <img src="https://dummyimage.com/34x34">
+                                            <p>Ever Never</p>
+                                        </div>
+                                        <p class="gray">已有20人参加</p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="add"><i class="icon-address-3"></i>湖南路大华广场</p>
+                                        <p class="gray">于7月21日开始</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- item over -->
+                    </ul>
+                    <!-- list over -->
+                </div>
+            </div>
+            <!-- main over -->
+            <div class="mui-off-canvas-backdrop"></div>
+        </div>
+    </div>
+    <!-- container over -->
+
+    <!-- global JS start -->
+    <!-- <script src="../js/jquery-1.9.1.min.js"></script> -->
+    <script src="../js/mui/mui.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/scripts.js"></script>
+    <!-- global JS over -->
+
+    <!-- page JS start -->
+    <script type="text/javascript">
+        mui.init({
+            pullRefresh: {
+                container: '.mui-scroll-wrapper',
+                down: {
+                    style: 'circle',
+                    offset: '0px',
+                    auto: true,
+                    callback: pulldownRefresh
+                },
+                up: {
+                    contentrefresh: '正在加载...',
+                    callback: pullupRefresh
+                }
+            }
+        });
+        // 下拉刷新
+        function pulldownRefresh() {
+            setTimeout(function() {
+                mui('.mui-scroll-wrapper').pullRefresh().endPulldownToRefresh();
+            }, 1000);
+        }
+        // 上拉加载
+        function pullupRefresh() {
+            setTimeout(function() {
+                mui('.mui-scroll-wrapper').pullRefresh().endPullupToRefresh();
+            }, 1000);
+        }
+    </script>
+    <!-- page JS start -->
+
+</body>
+
+</html>

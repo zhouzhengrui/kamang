@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
+    <title>发布兼职</title>
+    <!-- CSS start -->
+    <link href="../icofont/style.css" rel="stylesheet"/>
+    <link href="../css/style.min.css" rel="stylesheet"/>
+    <!-- CSS over -->
+    <script type="text/javascript" src="../js/system.js"></script>
+</head>
+
+
+<body>
+    <!-- container start -->
+    <div class="mui-off-canvas-wrap mui-draggable">
+        <div class="mui-inner-wrap">
+            <!-- header start -->
+            <header class="mui-bar mui-bar-nav mui-bar-border hairline status-bar">
+                <a class="mui-icon mui-pull-left icofont-back" href="4-job-select.html"><i class="icon-back"></i></a>
+                <h1 class="mui-title">发布兼职</h1>
+            </header>
+            <!-- header over -->
+            <!-- main start -->
+            <div class="mui-content mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="mui-content-padded">
+                        <!-- item start -->
+                        <div class="mui-input-row hairline">
+                            <label>兼职标题</label>
+                            <input type="text" class="mui-input-clear" placeholder="填写兼职标题">
+                        </div>
+                        <!-- item over -->
+                        <!-- item start -->
+                        <div class="mui-input-row hairline">
+                            <label>发布公司</label>
+                            <input type="text" class="mui-input-clear" placeholder="填写公司名称">
+                        </div>
+                        <!-- item over -->
+                        <!-- item start -->
+                        <div class="mui-input-row hairline">
+                            <label>工作区域</label>
+                            <select>
+            					<option value="" style="display:none">请选择工作区域</option>
+            					<option value="">花山</option>
+            					<option value="">雨山</option>
+            				</select>
+                        </div>
+                        <!-- item over -->
+                        <!-- item start -->
+                        <div class="mui-input-row hairline">
+                            <label>工作地址</label>
+                            <input type="text" class="mui-input-clear" placeholder="填写工作地址">
+                        </div>
+                        <!-- item over -->
+                        <!-- item start -->
+                        <div class="mui-input-row hairline">
+                            <label>兼职类型</label>
+                            <select>
+            					<option value="" style="display:none">请选择兼职类型</option>
+            					<option value="">销售</option>
+            				</select>
+                        </div>
+                        <!-- item over -->
+                        <!-- item start -->
+                        <div class="mui-input-row hairline">
+                            <label>兼职日期</label>
+                            <input id='dataPicker-1' type="text" data-options='{}' class="mui-input-clear" placeholder="选择活动时间">
+                        </div>
+                        <!-- item over -->
+                        <!-- item start -->
+                        <div class="mui-input-row hairline">
+                            <label>截止日期</label>
+                            <input id='dataPicker-2' type="text" data-options='{}' class="mui-input-clear" placeholder="选择截止日期">
+                        </div>
+                        <!-- item over -->
+                        <!-- item start -->
+                        <div class="mui-input-row hairline">
+                            <label>兼职人数</label>
+                            <input type="tel" class="mui-input-clear" placeholder="填写兼职人数">
+                        </div>
+                        <!-- item over -->
+                        <!-- item start -->
+                        <div class="mui-input-row hairline">
+                            <label>联系人</label>
+                            <input type="text" class="mui-input-clear" placeholder="填写联系人昵称">
+                        </div>
+                        <!-- item over -->
+                        <!-- item start -->
+                        <div class="mui-input-row hairline">
+                            <label>联系人电话</label>
+                            <input type="tel" class="mui-input-clear" placeholder="填写联系人电话">
+                        </div>
+                        <!-- item over -->
+                        <!-- item start -->
+                        <div class="mui-input-row" style="border-bottom: 0;">
+                            <textarea class="form-textarea hairline" rows="4" placeholder="请输入兼职要求与明细..."></textarea>
+                        </div>
+                        <!-- item over -->
+                        <!-- item start -->
+                        <div class="mui-input-row job-add-input-row">
+                            <label>薪资结算</label>
+                            <input type="tel" class="mui-input-clear">
+                            <span>元</span>
+                            <select>
+            					<option value="">日结</option>
+            					<option value="">周结</option>
+            				</select>
+                        </div>
+                        <!-- item over -->
+                        <!-- item start -->
+                        <div class="mui-input-row job-add-input-row">
+                            <label>交易模式</label>
+                            <select>
+            					<option value="">线上</option>
+            					<option value="">线下</option>
+            				</select>
+                        </div>
+                        <!-- item over -->
+                        <!-- item start -->
+                        <div class="mui-input-row" style="border-bottom: 0;">
+                            <div class="upload-image-party">
+                                <div class="upload-image-add"></div>
+                                <div class="upload-image-item" style="background-image:url('https://dummyimage.com/100x200')">
+                                    <a class="delete"></a>
+                                </div>
+                                <div class="upload-image-item" style="background-image:url('https://dummyimage.com/200x100')">
+                                    <a class="delete"></a>
+                                </div>
+                                <p class="upload-image-count">请上传工作场地相关照片</p>
+                            </div>
+                        </div>
+                        <!-- item over -->
+                        <p class="form-note">*前三次发布兼职免费，第四次后每次发布将收取5元/次为服务费用</p>
+                        <!-- button start -->
+                        <div class="mui-button-row" style="margin-top: 5px;">
+                            <button type="button" class="mui-btn mui-btn-warning mui-btn-block">确认发布</button>
+                        </div>
+                        <!-- button over -->
+                    </div>
+                </div>
+            </div>
+            <!-- main over -->
+            <div class="mui-off-canvas-backdrop"></div>
+        </div>
+    </div>
+    <!-- container over -->
+
+    <!-- global JS start -->
+    <!-- <script src="../js/jquery-1.9.1.min.js"></script> -->
+    <script src="../js/mui/mui.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/scripts.js"></script>
+    <!-- global JS over -->
+
+    <!-- page JS start -->
+    <script src="js/mui/mui.picker.min.js"></script>
+    <script type="text/javascript">
+        mui.init();
+        mui('.mui-scroll-wrapper').scroll('.mui-btn');
+        // dataPicker
+        $('#dataPicker-1')[0].addEventListener('tap', function() {
+            var dtPicker = new mui.DtPicker();
+            dtPicker.show();
+        });　　
+        $('#dataPicker-2')[0].addEventListener('tap', function() {
+            var dtPicker = new mui.DtPicker();
+            dtPicker.show();
+        });　　
+    </script>
+    <!-- page JS start -->
+
+</body>
+
+</html>

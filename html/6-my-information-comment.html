@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
+    <title>评论我的</title>
+    <!-- CSS start -->
+    <link href="../icofont/style.css" rel="stylesheet"/>
+    <link href="../css/style.min.css" rel="stylesheet"/>
+    <!-- CSS over -->
+    <script type="text/javascript" src="../js/system.js"></script>
+</head>
+
+
+<body>
+    <!-- container start -->
+    <div class="mui-off-canvas-wrap mui-draggable">
+        <div class="mui-inner-wrap">
+            <!-- header start -->
+            <header class="mui-bar mui-bar-nav mui-bar-border hairline status-bar">
+                <a class="mui-icon mui-pull-left icofont-back" href="6-my-information.html"><i class="icon-back"></i></a>
+                <h1 class="mui-title">回复我的</h1>
+            </header>
+            <!-- header over -->
+            <!-- main start -->
+            <div class="mui-content mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <!-- list start -->
+                    <div class="list-comment-2">
+                        <!-- item start -->
+                        <div class="item">
+                            <div class="avatar">
+                                <img src="../img/avatar-default.jpg">
+                            </div>
+                            <div class="info">
+                                <p class="name">Ever Never</p>
+                                <p class="date">2小时前</p>
+                                <p class="text">兼职环境相当不错，老板待人也很友善，下次还会再来的。</p>
+                                <p class="comment">兼职环境相当不错，老板待人也很友善，下次还会再来的</p>
+                            </div>
+                        </div>
+                        <!-- item over -->
+                        <!-- item start -->
+                        <div class="item">
+                            <div class="avatar">
+                                <img src="../img/avatar-default.jpg">
+                            </div>
+                            <div class="info">
+                                <p class="name">Ever Never</p>
+                                <p class="date">2017-12-05</p>
+                                <p class="text">兼职环境相当不错，老板待人也很友善，下次还会再来的。</p>
+                                <p class="comment">兼职环境相当不错，老板待人也很友善，下次还会再来的</p>
+                            </div>
+                        </div>
+                        <!-- item over -->
+                    </div>
+                    <!-- list over -->
+                </div>
+            </div>
+            <!-- main over -->
+            <div class="mui-off-canvas-backdrop"></div>
+        </div>
+    </div>
+    <!-- container over -->
+
+    <!-- global JS start -->
+    <!-- <script src="../js/jquery-1.9.1.min.js"></script> -->
+    <script src="../js/mui/mui.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/scripts.js"></script>
+    <!-- global JS over -->
+
+    <!-- page JS start -->
+    <script type="text/javascript">
+        mui.init({
+        	pullRefresh: {
+        		container: '.mui-scroll-wrapper',
+        		up: {
+        			contentrefresh: '正在加载...',
+        			callback: pullupRefresh
+        		}
+        	}
+        });
+        // 上拉加载
+        function pullupRefresh() {
+        	setTimeout(function() {
+        		mui('.mui-scroll-wrapper').pullRefresh().endPullupToRefresh();
+        	}, 1000);
+        }
+    </script>
+    <!-- page JS start -->
+
+</body>
+
+</html>

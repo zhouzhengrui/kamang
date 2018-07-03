@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
+    <title>咖忙通知</title>
+    <!-- CSS start -->
+    <link href="../icofont/style.css" rel="stylesheet"/>
+    <link href="../css/style.min.css" rel="stylesheet"/>
+    <!-- CSS over -->
+    <script type="text/javascript" src="../js/system.js"></script>
+</head>
+
+
+<body>
+    <!-- container start -->
+    <div class="mui-off-canvas-wrap mui-draggable">
+        <div class="mui-inner-wrap">
+            <!-- header start -->
+            <header class="mui-bar mui-bar-nav mui-bar-border hairline status-bar">
+                <a class="mui-icon mui-pull-left icofont-back" href="6-my-information.html"><i class="icon-back"></i></a>
+                <h1 class="mui-title">通知</h1>
+            </header>
+            <!-- header over -->
+            <!-- main start -->
+            <div class="mui-content mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <!-- list start -->
+                    <div class="list-notice">
+                        <p class="date">2小时前</p>
+                        <!-- item start -->
+                        <a class="item mui-table-view-cell" href="#">
+                            <div class="info">
+                                <p class="text">咖忙通知: ........</p>
+                            </div>
+                            <div class="readmore">
+                                <p>点击查看</p>
+                                <i class="icon-go"></i>
+                            </div>
+                            <div class="badge"></div>
+                        </a>
+                        <!-- item over -->
+                        <p class="date">昨天</p>
+                        <!-- item start -->
+                        <a class="item mui-table-view-cell" href="#">
+                            <div class="info">
+                                <p class="text">咖忙通知: ........</p>
+                            </div>
+                            <div class="readmore">
+                                <p>点击查看</p>
+                                <i class="icon-go"></i>
+                            </div>
+                        </a>
+                        <!-- item over -->
+                        <!-- item start -->
+                        <a class="item mui-table-view-cell" href="#">
+                            <div class="info">
+                                <p class="text">咖忙通知: ........</p>
+                            </div>
+                            <div class="readmore">
+                                <p>点击查看</p>
+                                <i class="icon-go"></i>
+                            </div>
+                        </a>
+                        <!-- item over -->
+                    </div>
+                    <!-- list over -->
+                </div>
+            </div>
+            <!-- main over -->
+            <div class="mui-off-canvas-backdrop"></div>
+        </div>
+    </div>
+    <!-- container over -->
+
+    <!-- global JS start -->
+    <!-- <script src="../js/jquery-1.9.1.min.js"></script> -->
+    <script src="../js/mui/mui.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/scripts.js"></script>
+    <!-- global JS over -->
+
+    <!-- page JS start -->
+    <script type="text/javascript">
+        mui.init({
+        	pullRefresh: {
+        		container: '.mui-scroll-wrapper',
+        		up: {
+        			contentrefresh: '正在加载...',
+        			callback: pullupRefresh
+        		}
+        	}
+        });
+        // 上拉加载
+        function pullupRefresh() {
+        	setTimeout(function() {
+        		mui('.mui-scroll-wrapper').pullRefresh().endPullupToRefresh();
+        	}, 1000);
+        }
+    </script>
+    <!-- page JS start -->
+
+</body>
+
+</html>

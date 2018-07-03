@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
+    <title>聊天</title>
+    <!-- CSS start -->
+    <link href="../icofont/style.css" rel="stylesheet"/>
+    <link href="../css/style.min.css" rel="stylesheet"/>
+    <!-- CSS over -->
+    <script type="text/javascript" src="../js/system.js"></script>
+</head>
+
+
+<body onload="loaded()">
+    <!-- header start -->
+    <header class="mui-bar mui-bar-nav mui-bar-color hairline status-bar">
+        <a class="mui-icon mui-pull-left icofont-back" href="3-information.html"><i class="icon-back"></i></a>
+        <h1 class="mui-title">兼职商家名称</h1>
+    </header>
+    <!-- header over -->
+    <!-- footer start -->
+    <footer class="chatbar">
+        <div class="chatbar-voice">
+            <i class="icon-microphone"></i>
+        </div>
+        <div class="chatbar-keyboard" hidden>
+            <i class="icon-keyboard"></i>
+        </div>
+        <div class="chatbar-text">
+            <textarea class="chatbar-text-input" id="textarea"></textarea>
+        </div>
+        <div class="chatbar-voice-control" hidden>
+            <button class="chatbar-voice-input">按住 说话</button>
+        </div>
+        <a class="chatbar-more waves-effect waves-light" href="#topPopover">
+            <i class="icon-append"></i>
+        </a>
+    </footer>
+    <!-- footer over -->
+
+    <!-- main start -->
+    <div class="chat-main mui-scroll-wrapper">
+        <div class="scroller mui-scroll">
+            <!-- pull-down高度40px, 顶部下拉时出现 -->
+            <!-- 下拉大于40px并释放触摸时preloader添加spin类名, 实现图标旋转 -->
+            <div class="pull-down">
+                <div class="preloader"></div>
+            </div>
+            <!-- message start -->
+            <div class="chat-message photo-swipe">
+                <!-- item start -->
+                <div class="item me">
+                    <div class="avatar">
+                        <img src="http://img.la/50x50" alt="">
+                    </div>
+                    <div class="message hairline">
+                        <p>嘿!</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item">
+                    <div class="avatar">
+                        <img src="http://img.la/50x50" alt="">
+                    </div>
+                    <div class="message">
+                        <p>干什么?</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item me">
+                    <div class="avatar">
+                        <img src="http://img.la/50x50" alt="">
+                    </div>
+                    <div class="message">
+                        <p>我养你啊!</p>
+                        <!-- 文字信息发送中 -->
+                        <div class="preloader spin senting"></div>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item">
+                    <div class="avatar">
+                        <img src="http://img.la/50x50" alt="">
+                    </div>
+                    <div class="message">
+                        <p>先养好你自己吧! 傻瓜</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <div class="chat-date"><span>3月25日 星期六 12:00</span></div>
+                <!-- item start -->
+                <div class="item">
+                    <div class="avatar">
+                        <img src="http://img.la/50x50" alt="">
+                    </div>
+                    <div class="message message-image">
+                        <figure>
+                            <!-- 大图最大宽高 1920px -->
+                            <!-- 小图最大宽高 150px -->
+                            <!-- data-size 为大图实际宽高 -->
+                            <a href="../img/test-image/image01.jpg" data-size="1920x1080">
+                                <img src="../img/test-image/image01-small.jpg" itemprop="thumbnail" alt="" />
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item me">
+                    <div class="avatar">
+                        <img src="http://img.la/50x50" alt="">
+                    </div>
+                    <div class="message message-image">
+                        <figure>
+                            <a href="../img/test-image/image02.jpg" data-size="1080x1920">
+                                <img src="../img/test-image/image02-small.jpg" alt="" />
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item me">
+                    <div class="avatar">
+                        <img src="http://img.la/50x50" alt="">
+                    </div>
+                    <div class="message">
+                        <!-- 图片上传中 -->
+                        <div class="preloader spin"></div>
+                    </div>
+                </div>
+                <!-- item over -->
+                <div class="chat-date"><span>3月25日 星期六 12:00</span></div>
+                <!-- item start -->
+                <div class="item">
+                    <div class="avatar">
+                        <img src="http://img.la/50x50" alt="">
+                    </div>
+                    <div class="message">
+                        <p>因为我的角色呢是比较调皮一点的, 所以我内心的潜在台词就是我不想死</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item">
+                    <div class="avatar">
+                        <img src="http://img.la/50x50" alt="">
+                    </div>
+                    <div class="message">
+                        <p>Thisisacontinuousletterusedtotestthelongword</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item me">
+                    <div class="avatar">
+                        <img src="http://img.la/50x50" alt="">
+                    </div>
+                    <div class="message">
+                        <p>超链接 <a data-href="http://baidu.com">https://github.com/zhouzhengrui/</a></p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item me">
+                    <div class="avatar">
+                        <img src="http://img.la/50x50" alt="">
+                    </div>
+                    <div class="message">
+                        <p>当然对于一些志同道合有兴趣的朋友, 大家还可以坐下来一起研究研究</p>
+                        <i class="icon-cancel send-fail"></i>
+                    </div>
+                </div>
+                <!-- item over -->
+                <div class="chat-date">
+                    <span>3月25日 星期六 12:00</span>
+                </div>
+                <!-- item start -->
+                <div class="item">
+                    <div class="avatar">
+                        <img src="http://img.la/50x50" alt="">
+                    </div>
+                    <div class="message voice">
+                        <p class="time">1s</p>
+                        <i class="icon-sound-wave"></i>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item me">
+                    <div class="avatar">
+                        <img src="http://img.la/50x50" alt="">
+                    </div>
+                    <div class="message voice">
+                        <i class="icon-sound-wave"></i>
+                        <p class="time">12s</p>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item">
+                    <div class="avatar">
+                        <img src="http://img.la/50x50" alt="">
+                    </div>
+                    <div class="message voice play">
+                        <p class="time">18s</p>
+                        <i class="icon-sound-wave"></i>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item">
+                    <div class="avatar">
+                        <img src="http://img.la/50x50" alt="">
+                    </div>
+                    <div class="message message-share">
+                        <div class="message-share-image">
+                            <img src="../img/message-share.png">
+                        </div>
+                        <div class="message-share-info">
+                            <p class="title">通讯兼职业务员</p>
+                            <!-- 字数限制, 不超过两行 -->
+                            <p class="text">在咖忙，干兼职，搞爬梯...</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="item me">
+                    <div class="avatar">
+                        <img src="http://img.la/50x50" alt="">
+                    </div>
+                    <div class="message message-share">
+                        <div class="message-share-image">
+                            <img src="../img/message-share.png">
+                        </div>
+                        <div class="message-share-info">
+                            <p class="title">通讯兼职业务员</p>
+                            <!-- 字数限制, 不超过两行 -->
+                            <p class="text">在咖忙，干兼职，搞爬梯...</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- item over -->
+            </div>
+            <!-- message over -->
+        </div>
+    </div>
+    <!-- main over -->
+
+    <!-- popover start -->
+    <div id="topPopover" class="mui-popover">
+        <div class="mui-popover-arrow"></div>
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell send-image"><p>发送图片</p><input type="file"></li>
+        </ul>
+    </div>
+    <!-- popover start -->
+
+    <!-- photoswipe start -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- photoswipe over -->
+
+    <!-- toast-voice start -->
+    <div class="toast-voice">
+        <i class="icon-microphone"></i>
+        <div class="ball-scale-ripple-multiple">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- toast-voice over -->
+
+    <!-- global JS start -->
+    <!-- <script src="../js/jquery-1.9.1.min.js"></script> -->
+    <script src="../js/mui/mui.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/scripts.js"></script>
+    <!-- global JS over -->
+
+    <script type="text/javascript" src="../js/nprogress/nprogress.js"></script>
+    <script type="text/javascript" src="../js/photoSwipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="../js/photoSwipe/photoswipe-ui-default.min.js"></script>
+    <script type="text/javascript">
+        // nprogress start
+        NProgress.start();
+        mui.init();
+        // $('.chatbar-text').bind('touchmove', function (e) {
+        //    e.returnValue = false;
+        // }, false);
+
+        // voice
+        // 点击话筒按钮
+        // $('.chatbar-voice').on('click', function () {
+        //    $(this).attr('hidden', 'hidden'); // 话筒按钮隐藏
+        //    $('.chatbar-keyboard').removeAttr('hidden'); // 键盘按钮显示
+        //    $('.chatbar-text').attr('hidden', 'hidden'); // 输入框隐藏
+        //    $('.chatbar-voice-control').removeAttr('hidden'); // 语音按钮显示
+        // });
+        // 点击键盘按钮
+        // $('.chatbar-keyboard').on('click', function () {
+        //    $(this).attr('hidden', 'hidden'); // 键盘按钮隐藏
+        //    $('.chatbar-voice').removeAttr('hidden'); // 话筒按钮显示
+        //    $('.chatbar-voice-control').attr('hidden', 'hidden'); // 语音按钮隐藏
+        //    $('.chatbar-text').removeAttr('hidden'); // 输入框显示
+        // });
+        // 语音按钮触摸开始
+        // $('.chatbar-voice-input').on('touchstart', function () {
+        //    $(this).addClass('active');
+        //    $('.toast-voice').addClass('show'); // 显示话筒面板
+        // });
+        // 语音按钮触摸结束
+        // $('.chatbar-voice-input').on('touchend', function () {
+        //    $(this).removeClass('active');
+        //    $('.toast-voice').removeClass('show'); // 隐藏话筒面板
+        // });
+
+        function loaded() {
+            //     // nprogress done
+            setTimeout(function() {
+                NProgress.done();
+                // $('.nprogress-fade').removeClass('nprogress-out');
+            }, 700);
+            mui('.mui-scroll-wrapper').scroll().scrollToBottom();
+            //     // iScroll
+            //     var chatScroll;
+            //     chatScroll = new IScroll('.chat-main', {
+            //         scrollbars: 'custom',
+            //         fadeScrollbars: true,
+            //         shrinkScrollbars: 'scale',
+            //         click: true
+            //     });
+            //     chatScroll.scrollToElement(document.querySelector('#last'), 0, null, null, null);
+            //     // keyboard fix
+            //     var timer = null;
+            //     $('.chatbar-text-input').focus(function() {
+            //         setTimeout(function() {
+            //             chatScroll.scrollToElement(document.querySelector('#last'), 300, null, null, null);
+            //         }, 300);
+            //     });
+            //     $('.chatbar-send').on('click', function() {
+            //         $('.chatbar-text-input').val('').focus();
+            //     });
+            // href fix
+            // var href = [];
+            // $("[data-href]").each(function(i) {
+            //     href[i] = $(this).data('href');
+            //     $(this).bind("click", function() {
+            //         location.href = href[i];
+            //     });
+            // });
+        };
+
+        // textarea
+        var autoTextarea = function(elem, extra, maxHeight) {
+            extra = extra || 0;
+            var addEvent = function(type, callback) {
+                    elem.addEventListener ?
+                        elem.addEventListener(type, callback, false) :
+                        elem.attachEvent('on' + type, callback);
+                },
+                getStyle = elem.currentStyle ? function(name) {
+                    var val = elem.currentStyle[name];
+
+                    if (name === 'height' && val.search(/px/i) !== 1) {
+                        var rect = elem.getBoundingClientRect();
+                        return rect.bottom - rect.top -
+                            parseFloat(getStyle('paddingTop')) -
+                            parseFloat(getStyle('paddingBottom')) + 'px';
+                    };
+
+                    return val;
+                } : function(name) {
+                    return getComputedStyle(elem, null)[name];
+                },
+                minHeight = parseFloat(getStyle('height'));
+
+            elem.style.resize = 'none';
+
+            var change = function() {
+                var height,
+                    padding = 0,
+                    style = elem.style;
+
+                if (elem._length === elem.value.length) return;
+                elem._length = elem.value.length;
+
+
+                elem.style.height = minHeight + 'px';
+                if (elem.scrollHeight > minHeight) {
+                    if (maxHeight && elem.scrollHeight > maxHeight) {
+                        height = maxHeight - padding;
+                        style.overflowY = 'auto';
+                    } else {
+                        height = elem.scrollHeight - padding;
+                        style.overflowY = 'hidden';
+                    };
+                    style.height = height + extra + 'px';
+                    elem.currHeight = parseInt(style.height);
+                };
+            };
+
+            addEvent('propertychange', change);
+            addEvent('input', change);
+            addEvent('focus', change);
+            change();
+        };
+        var text = document.getElementById("textarea");
+        autoTextarea(text);
+
+        // 安卓长按弹出修复
+        window.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        // photo swipe
+        var photoSwipe = function(gallerySelector) {
+            var parseThumbnailElements = function(el) {
+                var thumbElements = el.childNodes,
+                    numNodes = thumbElements.length,
+                    items = [],
+                    figureEl,
+                    linkEl,
+                    size,
+                    item;
+                for (var i = 0; i < numNodes; i++) {
+                    figureEl = thumbElements[i];
+                    if (figureEl.nodeType !== 1) {
+                        continue;
+                    }
+                    linkEl = figureEl.children[0];
+                    size = linkEl.getAttribute('data-size').split('x');
+                    item = {
+                        src: linkEl.getAttribute('href'),
+                        w: parseInt(size[0], 10),
+                        h: parseInt(size[1], 10)
+                    };
+                    if (figureEl.children.length > 1) {
+                        item.title = figureEl.children[1].innerHTML;
+                    }
+                    if (linkEl.children.length > 0) {
+                        item.msrc = linkEl.children[0].getAttribute('src');
+                    }
+                    item.el = figureEl;
+                    items.push(item);
+                }
+                return items;
+            };
+            var closest = function closest(el, fn) {
+                return el && (fn(el) ? el : closest(el.parentNode, fn));
+            };
+            var onThumbnailsClick = function(e) {
+                e = e || window.event;
+                e.preventDefault ? e.preventDefault() : e.returnValue = false;
+                var eTarget = e.target || e.srcElement;
+                var clickedListItem = closest(eTarget, function(el) {
+                    return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
+                });
+                if (!clickedListItem) {
+                    return;
+                }
+                var clickedGallery = clickedListItem.parentNode,
+                    childNodes = clickedListItem.parentNode.childNodes,
+                    numChildNodes = childNodes.length,
+                    nodeIndex = 0,
+                    index;
+                for (var i = 0; i < numChildNodes; i++) {
+                    if (childNodes[i].nodeType !== 1) {
+                        continue;
+                    }
+                    if (childNodes[i] === clickedListItem) {
+                        index = nodeIndex;
+                        break;
+                    }
+                    nodeIndex++;
+                }
+                if (index >= 0) {
+                    openPhotoSwipe(index, clickedGallery);
+                }
+                return false;
+            };
+            var photoswipeParseHash = function() {
+                var hash = window.location.hash.substring(1),
+                    params = {};
+                if (hash.length < 5) {
+                    return params;
+                }
+                var vars = hash.split('&');
+                for (var i = 0; i < vars.length; i++) {
+                    if (!vars[i]) {
+                        continue;
+                    }
+                    var pair = vars[i].split('=');
+                    if (pair.length < 2) {
+                        continue;
+                    }
+                    params[pair[0]] = pair[1];
+                }
+                if (params.gid) {
+                    params.gid = parseInt(params.gid, 10);
+                }
+                return params;
+            };
+            var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
+                var pswpElement = document.querySelectorAll('.pswp')[0],
+                    gallery,
+                    options,
+                    items;
+                items = parseThumbnailElements(galleryElement);
+                options = {
+                    shareEl: false,
+                    fullscreenEl: false,
+                    preloaderEl: false,
+                    galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+                    getThumbBoundsFn: function(index) {
+                        var thumbnail = items[index].el.getElementsByTagName('img')[0],
+                            pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+                            rect = thumbnail.getBoundingClientRect();
+                        return {
+                            x: rect.left,
+                            y: rect.top + pageYScroll,
+                            w: rect.width
+                        };
+                    }
+                };
+                if (fromURL) {
+                    if (options.galleryPIDs) {
+                        for (var j = 0; j < items.length; j++) {
+                            if (items[j].pid == index) {
+                                options.index = j;
+                                break;
+                            }
+                        }
+                    } else {
+                        options.index = parseInt(index, 10) - 1;
+                    }
+                } else {
+                    options.index = parseInt(index, 10);
+                }
+                if (isNaN(options.index)) {
+                    return;
+                }
+                if (disableAnimation) {
+                    options.showAnimationDuration = 0;
+                }
+                gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+                gallery.init();
+            };
+            var galleryElements = document.querySelectorAll(gallerySelector);
+
+            for (var i = 0, l = galleryElements.length; i < l; i++) {
+                galleryElements[i].setAttribute('data-pswp-uid', i + 1);
+                galleryElements[i].onclick = onThumbnailsClick;
+            }
+            var hashData = photoswipeParseHash();
+            if (hashData.pid && hashData.gid) {
+                openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
+            }
+        };
+        photoSwipe('.photo-swipe');
+    </script>
+</body>
+
+</html>

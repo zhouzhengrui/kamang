@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
+    <title>我的爬梯-我发布的</title>
+    <!-- CSS start -->
+    <link href="../icofont/style.css" rel="stylesheet"/>
+    <link href="../css/style.min.css" rel="stylesheet"/>
+    <!-- CSS over -->
+    <script type="text/javascript" src="../js/system.js"></script>
+</head>
+
+
+<body>
+    <!-- container start -->
+    <div class="mui-off-canvas-wrap mui-draggable">
+        <div class="mui-inner-wrap">
+            <!-- header start -->
+            <header class="mui-bar mui-bar-nav mui-bar-border hairline status-bar">
+                <a class="mui-icon mui-pull-left icofont-back" href="index.html"><i class="icon-back"></i></a>
+                <h1 class="mui-title">我的爬梯</h1>
+            </header>
+            <!-- header over -->
+            <!-- tabbar start -->
+            <header class="tab-bar">
+                <a class="mui-control-item mui-active" href="6-my-party.html">我发布的</a>
+                <a class="mui-control-item" href="6-my-party-2.html">我参加的</a>
+                <a class="mui-control-item" href="6-my-party-3.html">已完成</a>
+            </header>
+            <!-- tabbar over -->
+            <!-- main start -->
+            <div class="mui-content mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <!-- list start -->
+                    <ul class="list-party">
+                        <!-- item start -->
+                        <li class="item">
+                            <a class="item-body mui-table-view-cell" href="6-my-party-content.html">
+                                <div class="cover" style="background-image:url('https://dummyimage.com/345x190')">
+                                    <h4 class="title">安工大冶金系聚会马拉松</h4>
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="author">
+                                            <img src="https://dummyimage.com/34x34">
+                                            <p>Ever Never</p>
+                                        </div>
+                                        <p class="gray">已有20人参加</p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="add"><i class="icon-address-3"></i>湖南路大华广场</p>
+                                        <p style="color:#ff2c4c">待审核</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- item over -->
+                        <!-- item start -->
+                        <li class="item">
+                            <a class="item-body mui-table-view-cell" href="6-my-party-content.html">
+                                <div class="cover" style="background-image:url('https://dummyimage.com/345x190')">
+                                    <h4 class="title">安工大冶金系聚会马拉松</h4>
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="author">
+                                            <img src="https://dummyimage.com/34x34">
+                                            <p>Ever Never</p>
+                                        </div>
+                                        <p class="gray">已有20人参加</p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="add"><i class="icon-address-3"></i>湖南路大华广场</p>
+                                        <p style="color:#55c56a">已发布</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- item over -->
+                    </ul>
+                    <!-- list over -->
+                </div>
+            </div>
+            <!-- main over -->
+            <div class="mui-off-canvas-backdrop"></div>
+        </div>
+    </div>
+    <!-- container over -->
+
+    <!-- global JS start -->
+    <!-- <script src="../js/jquery-1.9.1.min.js"></script> -->
+    <script src="../js/mui/mui.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/scripts.js"></script>
+    <!-- global JS over -->
+
+    <!-- page JS start -->
+    <script type="text/javascript">
+        mui.init({
+            pullRefresh: {
+                container: '.mui-scroll-wrapper',
+                down: {
+                    style: 'circle',
+                    offset: '0px',
+                    auto: true,
+                    callback: pulldownRefresh
+                },
+                up: {
+                    contentrefresh: '正在加载...',
+                    callback: pullupRefresh
+                }
+            }
+        });
+        // 下拉刷新
+        function pulldownRefresh() {
+            setTimeout(function() {
+                mui('.mui-scroll-wrapper').pullRefresh().endPulldownToRefresh();
+            }, 1000);
+        }
+        // 上拉加载
+        function pullupRefresh() {
+            setTimeout(function() {
+                mui('.mui-scroll-wrapper').pullRefresh().endPullupToRefresh();
+            }, 1000);
+        }
+    </script>
+    <!-- page JS start -->
+
+</body>
+
+</html>
